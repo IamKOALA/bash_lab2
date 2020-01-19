@@ -1,0 +1,3 @@
+#!/bin/bash
+
+grep -rsh "^#!" "/bin" | sort | uniq -c | sort -nr | head -1
