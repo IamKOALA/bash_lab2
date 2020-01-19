@@ -1,0 +1,4 @@
+#!/bin/bash
+
+grep -r -s -h "^ACPI" "/var/log/" > "errors.log"
+grep -E "^.*\/([a-zA-Z0-9.]+\/)+"  "errors.log"
